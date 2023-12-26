@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border: none;
+            background-color: #2d2d2d;
+            color: white;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .answer {
+            padding: 1.5rem;
+            border: none;
+            background-color: #2d2d2d;
+            color: white;
+            font-size: 24px;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="questions" class="w-100">
+        <div>
+            <button class="question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample${index}"
+                aria-expanded="false" aria-controls="collapseExample">
+                What is Netflix?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="collapse" id="collapseExample${index}">
+                <div class="answer">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries and more – on thousands of internet-connected devices. " + "<br />" + "<br />" + " You can
+                    watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+                    There's always something new to discover, and new TV shows and movies are added every week! </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
